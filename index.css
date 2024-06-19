@@ -1,0 +1,82 @@
+body {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  align-content: center;
+
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+
+  font-family: Kaushan Script;
+}
+
+h1 span {
+  color: #FFDE00;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 4.5rem;
+}
+
+a {
+  color: white;
+  background-color: #fd65dc;
+  text-decoration: none;
+  padding: 1rem 2rem;
+
+  font-size: 1.5rem;
+  border-radius: .5rem;
+
+  transition: background-color 300ms;
+}
+
+#bg-image {
+  background-image: url("https://images.pexels.com/photos/20755030/pexels-photo-20755030/free-photo-of-amor-coracao-romantico-flores.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  inset: 0;
+
+  opacity: 0.3;
+
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+a:hover {
+  background-color: #f137c3;
+}
+
+@media (width <40rem) {
+  html {
+    font-size: 70%;
+  }
+}
+
+h1, p, a {
+  animation: aparecer 1s backwards;
+}
+
+h1 {
+  animation-delay: 0.2s;
+}
+
+p {
+  animation-delay: 0.8s;
+}
+
+a {
+  animation-delay: 1.6s;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+}
